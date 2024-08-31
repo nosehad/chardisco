@@ -6,7 +6,7 @@
 @import "pdf";
 
 @font-face {
-  src: url("/assets/fonts/practice_fonts/PlaywriteDEGrund-ExtraLight.ttf") format("truetype");
+  src: url(" {{ '/assets/fonts/practice_fonts/PlaywriteDEGrund-ExtraLight.ttf' | relative_url }} ") format("truetype");
   font-family: "PlaywriteDEGrund";
 }
 
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  src: url("/assets/fonts/practice_fonts/Charmonman-Regular.ttf") format("truetype");
+  src: url(" {{ '/assets/fonts/practice_fonts/Charmonman-Regular.ttf' | relative_url }} ") format("truetype");
   font-family: "Charmonman";
 }
 
@@ -24,7 +24,7 @@
 }
 
 @font-face {
-  src: url("/assets/fonts/practice_fonts/Allison-Regular.ttf") format("truetype");
+  src: url(" {{ '/assets/fonts/practice_fonts/Allison-Regular.ttf' | relative_url }} ") format("truetype");
   font-family: "Allison";
 }
 
@@ -33,7 +33,7 @@
 }
 
 @font-face {
-  src: url("/assets/fonts/practice_fonts/MrsSaintDelafield-Regular.ttf") format("truetype");
+  src: url(" {{ '/assets/fonts/practice_fonts/MrsSaintDelafield-Regular.ttf' | relative_url }} ") format("truetype");
   font-family: "MrsSaintDelafield";
 }
 
@@ -42,7 +42,7 @@
 }
 
 @font-face {
-  src: url("/assets/fonts/practice_fonts/DeliusSwashCaps-Regular.ttf") format("truetype");
+  src: url(" {{ '/assets/fonts/practice_fonts/DeliusSwashCaps-Regular.ttf' | relative_url }} ") format("truetype");
   font-family: "DeliusSwashCaps";
 }
 
@@ -51,7 +51,7 @@
 }
 
 @font-face {
-  src: url("/assets/fonts/practice_fonts/MeieScript-Regular.ttf") format("truetype");
+  src: url(" {{ '/assets/fonts/practice_fonts/MeieScript-Regular.ttf' | relative_url }} ") format("truetype");
   font-family: "MeieScript";
 }
 
@@ -60,7 +60,7 @@
 }
 
 @font-face {
-  src: url("/assets/fonts/practice_fonts/MeaCulpa-Regular.ttf") format("truetype");
+  src: url(" {{ '/assets/fonts/practice_fonts/MeaCulpa-Regular.ttf' | relative_url }} ") format("truetype");
   font-family: "MeaCulpa";
 }
 
@@ -69,7 +69,7 @@
 }
 
 @font-face {
-  src: url("/assets/fonts/practice_fonts/Calligraffitti-Regular.ttf") format("truetype");
+  src: url(" {{ '/assets/fonts/practice_fonts/Calligraffitti-Regular.ttf' | relative_url }} ") format("truetype");
   font-family: "Calligraffitti";
 }
 
@@ -78,7 +78,7 @@
 }
 
 @font-face {
-  src: url("/assets/fonts/practice_fonts/PlaywriteDEVA-Light.ttf") format("truetype");
+  src: url(" {{ '/assets/fonts/practice_fonts/PlaywriteDEVA-Light.ttf' | relative_url }} ") format("truetype");
   font-family: "PlaywriteDEVA";
 }
 
@@ -87,7 +87,7 @@
 }
 
 @font-face {
-  src: url("/assets/fonts/practice_fonts/Tangerine-Bold.ttf") format("truetype");
+  src: url(" {{ '/assets/fonts/practice_fonts/Tangerine-Bold.ttf' | relative_url }} ") format("truetype");
   font-family: "Tangerine";
 }
 
@@ -96,7 +96,7 @@
 }
 
 @font-face {
-  src: url("/assets/fonts/practice_fonts/GreatVibes-Regular.ttf") format("truetype");
+  src: url(" {{ '/assets/fonts/practice_fonts/GreatVibes-Regular.ttf' | relative_url }} ") format("truetype");
   font-family: "GreatVibes";
 }
 
@@ -105,7 +105,7 @@
 }
 
 @font-face {
-  src: url("/assets/fonts/practice_fonts/PlaywriteCU-Light.ttf") format("truetype");
+  src: url(" {{ '/assets/fonts/practice_fonts/PlaywriteCU-Light.ttf' | relative_url }} ") format("truetype");
   font-family: "PlaywriteCU";
 }
 
@@ -114,7 +114,7 @@
 }
 
 @font-face {
-  src: url("/assets/fonts/practice_fonts/Sacramento-Regular.ttf") format("truetype");
+  src: url(" {{ '/assets/fonts/practice_fonts/Sacramento-Regular.ttf' | relative_url }} ") format("truetype");
   font-family: "Sacramento";
 }
 
