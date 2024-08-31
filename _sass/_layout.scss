@@ -1,5 +1,3 @@
-@import "pdf";
-
 body, html {
   padding:0%; margin: 0%;
   width: 100%;
@@ -53,38 +51,4 @@ header .subtitle {
 header, main, footer {
   max-width: 800px;
   margin: 0px 10px 0px 10px;
-}
-
-.pdf-preview-container {
-  user-select: none;
-  cursor:crosshair;
-  height: 306px;
-  overflow: hidden;
-  position: relative;
-}
-
-.pdf-preview-container.print  {
-  width: $page-width !important;
-  height: $page-height !important;
-  overflow: visible !important;
-}
-
-.pdf-preview-container-wrap {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 2px solid #fff;
-  width: 600px;
-  max-width: 90%;
-  background: #c4bcac;
-  border-radius: 5px;
-}
-
-.pdf-preview-container-blur {
-  transition: all 0.3s;
-  position: fixed;
-  backdrop-filter: blur(3px);
-  width: 100%;
-  height: 100%;
 }
