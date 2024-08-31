@@ -4,9 +4,6 @@
 @import "colors";
 @import "../assets/css/sheet_color";
 
-$page-height: 848px;
-$page-width: 600px;
-
 @font-face {
   src: url(" {{ '/assets/fonts/practice_fonts/PlaywriteDEGrund-ExtraLight.ttf' | relative_url }} ") format("truetype");
   font-family: "PlaywriteDEGrund";
@@ -133,8 +130,8 @@ $page-width: 600px;
 }
 
 .pdf-preview-container.print  {
-  width: $page-width !important;
-  height: $page-height !important;
+  width: 600px !important;
+  height: 848px !important;
   overflow: visible !important;
 }
 
@@ -217,7 +214,7 @@ hp:after {
 .writing-exercise-line {
   text-align: left;
   padding: 0px 10px;
-  width: calc($page-width - 94px);
+  width: calc(600px - 94px);
   border-style: solid;
   border-color: $line-color;
   border-width: 2px;
