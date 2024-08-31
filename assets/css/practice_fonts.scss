@@ -4,7 +4,7 @@
 @import "colors";
 @import "../assets/css/sheet_color";
 
-$page-height: 841.89px;
+$page-height: 848px;
 $page-width: 600px;
 
 @font-face {
@@ -208,8 +208,8 @@ hp:after {
   display: flex;
   position: absolute;
   flex-direction: column;
-  justify-content: space-around;
-  align-content: center;
+  justify-content: space-between;
+  align-items: center;
   width: 600px;
   flex-wrap: wrap;
 }
@@ -217,7 +217,7 @@ hp:after {
 .writing-exercise-line {
   text-align: left;
   padding: 0px 10px;
-  width: calc($page-width - 34px);
+  width: calc($page-width - 94px);
   border-style: solid;
   border-color: $line-color;
   border-width: 2px;

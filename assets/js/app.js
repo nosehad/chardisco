@@ -76,15 +76,18 @@ const practice_fonts = {
     }
 }
 
-const letters = "Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz Ää Öö Üü <br> Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz Ää Öö Üü <br> Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz Ää Öö Üü"
-const numbers = "1 2 3 4 5 6 7 8 9 0 * + - / 5% 10% 15% 25% 33% 40% 50% 70% 75% 80% 90% 100% <br> 1 2 3 4 5 6 7 8 9 0 * + - / 5% 10% 15% 25% 33% 40% 50% 70% 75% 80% 90% 100% <br> 1 2 3 4 5 6 7 8 9 0 * + - / 5% 10% 15% 25% 33% 40% 50% 70% 75% 80% 90% 100% <br> 1 2 3 4 5 6 7 8 9 0 * + - / 5% 10% 15% 25% 33% 40% 50% 70% 75% 80% 90% 100%"
+const letters = "Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz Ää Öö Üü <br> Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz Ää Öö Üü <br> Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz Ää Öö Üü <br> Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz Ää Öö Üü <br> Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz Ää Öö Üü <br> Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz Ää Öö Üü";
+
+const numbers = "1 2 3 4 5 6 7 8 9 0 * + - / 5% 10% 15% 25% 33% 40% 50% 70% 75% 80% 90% 100% <br> 1 2 3 4 5 6 7 8 9 0 * + - / 5% 10% 15% 25% 33% 40% 50% 70% 75% 80% 90% 100% <br> 1 2 3 4 5 6 7 8 9 0 * + - / 5% 10% 15% 25% 33% 40% 50% 70% 75% 80% 90% 100% <br> 1 2 3 4 5 6 7 8 9 0 * + - / 5% 10% 15% 25% 33% 40% 50% 70% 75% 80% 90% 100% <br> 1 2 3 4 5 6 7 8 9 0 * + - / 5% 10% 15% 25% 33% 40% 50% 70% 75% 80% 90% 100% <br> 1 2 3 4 5 6 7 8 9 0 * + - / 5% 10% 15% 25% 33% 40% 50% 70% 75% 80% 90% 100% <br> 1 2 3 4 5 6 7 8 9 0 * + - / 5% 10% 15% 25% 33% 40% 50% 70% 75% 80% 90% 100%"
 
 const defLineHeight = 21.215; /* the default height of the sheet line background */
 const defLineAmount = 24;
-const defMaxTextWidth = 566;
+const defMaxTextWidth = 506;
 const defSheetWidth = 600;
 const defSheetHeight = 848;
 const defLineBorderWidth = 2;
+const defSheetVerticalMargin = 30;
+
 let defMaxPages = 3; /* chrome: 25 */
 
 if (navigator.userAgent.indexOf('Firefox') !== -1) {
@@ -220,7 +223,7 @@ async function createLine(fontname) {
 function createLegalSection() {
     let line = document.createElement("span");
     line.innerHTML = `All license fees have been fully settled. 
-    Personal and Comercial use in any form are only permitted up to and including ${new Date().toISOString().split('T')[0]}.<br>© 2024 Noah Nagel`
+     Using this in any form is only permitted up to and including ${new Date().toISOString().split('T')[0]}.<br>© 2024 Noah Nagel`
     line.classList.add("legal-section");
     line.id = "legal-section";
     return line;
@@ -228,6 +231,8 @@ function createLegalSection() {
 
 async function createSheet() {
     let sheet = document.createElement("div");
+    sheet.classList.add("writing-exercise-sheet");
+
     sheet.style.maxHeight = `${defMaxCanvasHeight}px`;
     sheet.id = "preview-sheet";
 
@@ -241,14 +246,16 @@ async function createSheet() {
     for (let i = 0; i < contentPagesNeeded; i++) {
         if (i == defMaxPages)
             break;
-        sheet.classList.add("writing-exercise-sheet");
         //sheet.style.fontFamily = name;
-        for (contentJ = 0; contentJ < contentLinesMax; contentJ++)
+        let firstLine = await createLine(currentFont);
+        firstLine.style.marginTop = `${defSheetVerticalMargin}px`;
+        sheet.appendChild(firstLine);
+        for (contentJ = 1; contentJ < contentLinesMax; contentJ++)
             sheet.appendChild(await createLine(currentFont));
         sheet.appendChild(createLegalSection());
     }
 
-    sheet.style.height = `${defSheetHeight * contentPagesNeeded}px`
+    sheet.style.height = `${(defSheetHeight) * contentPagesNeeded}px`
 
     return sheet;
 }
