@@ -2,17 +2,17 @@
 
 @font-face {
   font-family: "Playfair";
-  src: url("/assets/fonts/Playfair-VariableFont_opsz,wdth,wght.ttf") format("truetype");
+  src: url(" {{ '/assets/fonts/Playfair-VariableFont_opsz,wdth,wght.ttf' | relative_url }} ") format("truetype");
 }
 
 @font-face {
   font-family: "Playfair italic";
-  src: url("/assets/fonts/Playfair-Italic-VariableFont_opsz,wdth,wght.ttf") format("truetype");
+  src: url(" {{ '/assets/fonts/Playfair-Italic-VariableFont_opsz,wdth,wght.ttf' | relative_url }} ") format("truetype");
 }
 
 @font-face {
   font-family: "Rubik";
-  src: url("/assets/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  src: url(" {{ '/assets/fonts/Rubik-VariableFont_wght.ttf' | relative_url }} ") format("truetype");
 }
 
 h1 {
