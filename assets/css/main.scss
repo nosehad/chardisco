@@ -3,18 +3,19 @@
 
 @font-face {
     font-family: "Playfair"; 
-    src: url(" {{ '/assets/fonts/playfair.ttf' | relative_url }} ") format("truetype");
+    src: url("{{ '/assets/fonts/playfair.ttf' | relative_url }}") format("truetype");
   }
   
   @font-face {
     font-family: "Playfair italic";
-    src: url(" {{ '/assets/fonts/playfair_italic.ttf' | relative_url }} ") format("truetype");
+    src: url("{{ '/assets/fonts/playfair_italic.ttf' | relative_url }}") format("truetype");
   }
   
   @font-face {
     font-family: "Rubik";
-    src: url(" {{ '/assets/fonts/rubik.ttf' | relative_url }} ") format("truetype");
+    src: url("{{ '/assets/fonts/rubik.ttf' | relative_url }}") format("truetype");
   }
+  
 
 @import "typography";
 @import "layout";

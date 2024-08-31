@@ -318,7 +318,7 @@ async function changeScale() {
 
 async function fetchRandomText() {
     try {
-        const response = await fetch(" {{ '/assets/json/kafka.json' | relative_url }} ");
+        const response = await fetch('/assets/json/kafka.json');
         if (!response.ok) {
             throw new Error('response not ok ' + response.statusText);
         }

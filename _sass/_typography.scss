@@ -5,9 +5,9 @@ h1 {
   font-size: 100px;
 }
 
-h2,h3,h4,h5 {
+h2, h3, h4, h5 {
   color: $subtitle-color;
-  font-weight: 370;
+  font-weight: 400; /* Ensure valid font-weight */
 }
 
 p {
@@ -23,24 +23,24 @@ strong {
 }
 
 body {
-    font-family: "Rubik", -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-weight: 370;
-    font-size: 18px;
-    line-height: 1.5;
-    color: $font-color;
-    background: $primary-color;
-  }
-  
-  a {
-    text-decoration: none;
-    color: $secondary-color;
-    font-size: 18px;
-  }
-  
-  code,
-  pre {
-    font-family: Menlo, Consolas, "Consolas for Powerline", "Courier New", Courier, monospace;
-    background-color: $font-color;
-    color: $primary-color;
-    padding: 0.25em
-  }
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $font-color;
+  background: $primary-color;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary-color;
+  font-size: 18px;
+}
+
+code,
+pre {
+  font-family: Menlo, Consolas, "Consolas for Powerline", "Courier New", Courier, monospace;
+  background-color: $font-color;
+  color: $primary-color;
+  padding: 0.25em;
+}
