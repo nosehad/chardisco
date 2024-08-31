@@ -1,0 +1,33 @@
+@import "colors";
+
+
+button {
+    padding: 15px;
+    margin: 5px;
+    color: $font-color;
+    border: 2px solid $secondary-color;
+    background: transparent;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    transition: all .3s;
+    min-width: 150px;
+    user-select: none;
+    border-radius: 5px;
+  }
+  
+  button svg {
+      display: inline;
+      /* margin: -2px; */
+      margin-bottom: -2px;
+      margin-right: 1px;
+      height: 14px;
+  }
+  
+  button:hover {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 20px $primary-color; /* Add a subtle shadow on focus */
+  
+    color: $primary-color;
+    border: 2px solid $secondary-color;
+    background: $secondary-color;
+  }

@@ -1,0 +1,9 @@
+# page configuration
+
+author: Noah Nagel
+
+# optional configuration 
+
+sass:
+    sass_dir: _sass
+    style: compressed

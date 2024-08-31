@@ -1,0 +1,97 @@
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 138px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 48.3px;
+    background: rgba(0, 0, 0, 0);
+    color: #171a21;
+    border: 2px solid #93032e;
+    outline: none;
+    border-radius: 5px;
+    -webkit-transition: .2s;
+  }
+  
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 25px; 
+    height: 25px;
+    background: $font-color; 
+    cursor: pointer; 
+    border-radius: 100%;
+    border: none;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; 
+    height: 25px; 
+    background: $font-color; 
+    cursor: pointer; 
+    border-radius: 100%;
+    border: none;
+  }
+  
+  select
+  {
+    border-radius: 5px;
+    text-align: center;
+    background: transparent;
+    color: $font-color;
+    border: 2px solid $secondary-color;
+    cursor: pointer;
+    margin: 2px;
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 150px; 
+    height: 52px; 
+    outline: none;
+    padding-right: 5px;
+  }
+  
+  select:hover
+  {
+        outline: none; /* Remove default outline */
+    box-shadow: 0 0 20px $primary-color; /* Add a subtle shadow on focus */
+  
+    color: $primary-color;
+    border: 2px solid $secondary-color;
+    background: $secondary-color;
+  }
+  
+  option
+  {
+    text-align: center;
+  }
+  
+  .slider:hover {
+        outline: none; /* Remove default outline */
+    box-shadow: 0 0 20px $primary-color; /* Add a subtle shadow on focus */
+  
+    color: $primary-color;
+    border: 2px solid $secondary-color;
+    background: $secondary-color; 
+  }
+
+  input {
+    background: transparent;
+    color: $font-color;
+    border: 2px solid $secondary-color;
+  }
+
+  .input-wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    align-items: center;
+  }
+
+  .input-section {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }

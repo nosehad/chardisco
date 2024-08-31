@@ -1,0 +1,61 @@
+@import "colors";
+
+@font-face {
+  font-family: "Playfair";
+  src: url("/assets/fonts/Playfair-VariableFont_opsz,wdth,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Playfair italic";
+  src: url("/assets/fonts/Playfair-Italic-VariableFont_opsz,wdth,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("/assets/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+}
+
+h1 {
+  font-family: "Playfair";
+  font-size: 100px;
+}
+
+h2,h3,h4,h5 {
+  color: $subtitle-color;
+  font-weight: 370;
+}
+
+p {
+  font-size: 18px;
+}
+
+button, a, ul, li {
+  font-size: 16px;
+}
+
+strong {
+  color: $secondary-color;
+}
+
+body {
+    font-family: "Rubik", -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 370;
+    font-size: 18px;
+    line-height: 1.5;
+    color: $font-color;
+    background: $primary-color;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+    font-size: 18px;
+  }
+  
+  code,
+  pre {
+    font-family: Menlo, Consolas, "Consolas for Powerline", "Courier New", Courier, monospace;
+    background-color: $font-color;
+    color: $primary-color;
+    padding: 0.25em
+  }
