@@ -7,3 +7,7 @@ author: Noah Nagel
 sass:
     sass_dir: _sass
     style: compressed
+
+# github stuff
+baseurl: "/chardisco"  # Leave this empty for user or organization site, or set it to "/repository-name" for project site
+url: "https://nosehad.github.io"  # Replace with your GitHub Pages URL
