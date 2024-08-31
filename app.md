@@ -3,6 +3,7 @@ layout: app
 btitle: Getting Started
 title: Hand-Writing
 subtitle: Practice Sheets
+permalink: /app/
 
 linkedin: "https://www.linkedin.com/in/noah-nagel-04b516326/"
 twitter: "https://x.com/nosehad"
