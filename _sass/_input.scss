@@ -10,7 +10,8 @@
     border: 2px solid #93032e;
     outline: none;
     border-radius: 5px;
-    -webkit-transition: .2s;
+    -webkit-transition: .3s;
+    transition: all .3s;
   }
   
   
@@ -49,6 +50,8 @@
     height: 52px; 
     outline: none;
     padding-right: 5px;
+    -webkit-transition: .3s;
+    transition: all .3s;
   }
   
   select:hover
@@ -67,7 +70,7 @@
   }
   
   .slider:hover {
-        outline: none; /* Remove default outline */
+    outline: none; /* Remove default outline */
     box-shadow: 0 0 20px $primary-color; /* Add a subtle shadow on focus */
   
     color: $primary-color;
